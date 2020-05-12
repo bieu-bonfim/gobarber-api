@@ -1,3 +1,4 @@
+// import { getRepository } from 'typeorm';
 import { startOfHour } from 'date-fns';
 import Appointment from '../models/Appointment';
 import AppointmentsRepository from '../repositories/AppointmentsRepository';
@@ -15,6 +16,10 @@ class CreateAppointmentService {
   }
 
   public execute({ provider_id, date }: Request): Appointment {
+    // const appointmentsRepository2 = getRepository(Appointment);
+
+    // console.log(appointmentsRepository2.find());
+
     const appointmentDate = startOfHour(date);
 
     const findAppointmentInSameDate = this.appointmentsRepository.findByDate(
