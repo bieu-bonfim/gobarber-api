@@ -49,6 +49,12 @@ class FakeUsersRepository implements IUsersRepository {
 
     return user;
   }
+
+  public async listAll(): Promise<User[]> {
+    const allUsers = this.users;
+
+    return allUsers;
+  }
 }
 
 export default FakeUsersRepository;
