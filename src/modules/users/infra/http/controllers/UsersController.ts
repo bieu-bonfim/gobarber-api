@@ -6,7 +6,7 @@ import ListUsersService from '@modules/users/services/ListUsersService';
 import CreateUserService from '@modules/users/services/CreateUserService';
 
 export default class UsersController {
-  public async index(request: Request, response: Response): Promise<User[]> {
+  public async index(request: Request, response: Response): Promise<Response> {
     const listUsersService = container.resolve(ListUsersService);
 
     const users = await listUsersService.execute();
