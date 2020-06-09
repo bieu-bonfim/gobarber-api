@@ -1,12 +1,12 @@
 [
   {
     "name": "default",
-    "type": "postgres",
-    "host": "localhost",
-    "port": 5432,
-    "username": "postgres",
-    "password": "docker",
-    "database": "gostack_gobarber",
+    "type": "mysql",
+    "host": "167.99.114.5",
+    "port": 3306,
+    "username": "gobarber_2020",
+    "password": "edfoxac10",
+    "database": "gobarber_2020",
     "entities": [
       "./src/modules/**/infra/typeorm/entities/*.ts"
     ],
