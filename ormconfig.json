@@ -1,12 +1,12 @@
 [
   {
     "name": "default",
-    "type": "mysql",
-    "host": "167.99.114.5",
-    "port": 3306,
-    "username": "gobarber_2020",
-    "password": "edfoxac10",
-    "database": "gobarber_2020",
+    "type": "postgres",
+    "host": "134.122.112.117",
+    "port": 5432,
+    "username": "postgres",
+    "password": "Ed@foxac200",
+    "database": "gobarber",
     "entities": [
       "./src/modules/**/infra/typeorm/entities/*.ts"
     ],
@@ -20,10 +20,9 @@
   {
     "name": "mongo",
     "type": "mongodb",
-    "host": "localhost",
-    "port": 27017,
-    "database": "gobarber",
+    "url": "mongodb+srv://gobarber:edfoxac10@cluster0-7glom.azure.mongodb.net/gobarber?retryWrites=true&w=majority",
     "useUnifiedTopology": true,
+    "useNewUrlParser": true,
     "entities": [
       "./src/modules/**/infra/typeorm/schemas/*.ts"
     ]
